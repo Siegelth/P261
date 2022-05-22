@@ -3,6 +3,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 public class caculateDate {
+    caculateDate(){};
     public static void main(String[] args) throws Exception {
 
         System.out.println("start");
