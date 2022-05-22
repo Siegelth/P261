@@ -7,16 +7,16 @@ public class caculateDate {
 
         System.out.println("start");
         Scanner input = new Scanner(System.in);
-            int stYear = input.nextInt();
-            int stMonth = input.nextInt();
-            int stDay = input.nextInt();
-        LocalDate startDate = LocalDate.of(stYear, stMonth, stDay);
+            int Year = input.nextInt();
+            int Month = input.nextInt();
+            int Day = input.nextInt();
+        LocalDate startDate = LocalDate.of(Year, Month, Day);
 
         System.out.println("end");
-            int edYear = input.nextInt();
-            int edMonth = input.nextInt();
-            int edDay = input.nextInt();
-        LocalDate endDate = LocalDate.of(edYear, edMonth, edDay);
+            Year = input.nextInt();
+            Month = input.nextInt();
+            Day = input.nextInt();
+        LocalDate endDate = LocalDate.of(Year, Month, Day);
         input.close();
 
         Long theDays = startDate.until(endDate,ChronoUnit.DAYS);
